@@ -4,7 +4,7 @@ import { Avatar, ListItem } from 'react-native-elements';
 export default function PersonItemComp({ data }) {
     return (
         <ListItem
-            containerStyle={{ backgroundColor: 'transparent', margin:0 }}
+            containerStyle={{ backgroundColor: 'transparent', margin:0, padding:0 }}
         >
             <Avatar
                 size={data.avatarSize}
@@ -17,11 +17,11 @@ export default function PersonItemComp({ data }) {
             />
             <ListItem.Content>
 
-                <ListItem.Title style={{ color: 'whitesmoke', fontSize:24 }}>
+                <ListItem.Title style={{ color: 'whitesmoke', fontSize:18, fontWeight:'600' }}>
                     {data.title}
                 </ListItem.Title>
 
-                <ListItem.Subtitle style={{ color: 'whitesmoke', fontSize:16 }}>
+                <ListItem.Subtitle style={{ color: 'whitesmoke', fontSize:14 }}>
                     {data.name}
                 </ListItem.Subtitle>
 

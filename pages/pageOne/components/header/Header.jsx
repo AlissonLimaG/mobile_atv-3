@@ -9,7 +9,7 @@ export default function Header() {
             <PersonItemComp
                 data={{ name: 'Alisson Lima', title: 'Bem vindo', avatarSize:48 }}
             />
-            <SearchBarComp/>
+            <SearchBarComp data={{width:'95%', borderR:32}}/>
         </View>
     );
 }
@@ -20,5 +20,7 @@ const styles = StyleSheet.create({
         borderRadius:16,
         paddingBottom:24,
         paddingTop:8,
+        paddingHorizontal:16,
+        gap:16
     }
 });
