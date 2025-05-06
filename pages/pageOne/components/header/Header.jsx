@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import PersonItemComp from '../../../../common/personItem/PersonItemComp';
 import SearchBarComp from '../../../../common/searchBar/SearchBarComp';
+import UserService from '../../../../services/UserService';
 
 export default function Header() {
+
+    const [profile, setProfile] = useState({});
+
+    const getUser = async (id) => {
+        const user = await UserService.findById(id);
+        setProfile(user);
+    }
+
+    useEffect(() => getUser(1), [])
+
+
     return (
         <View style={styles.header}>
             <PersonItemComp
-                data={{ name: 'Alisson Lima', title: 'Bem vindo', avatarSize:48 }}
+                data={profile}
             />
             <SearchBarComp data={{width:'95%', borderR:32}}/>
         </View>

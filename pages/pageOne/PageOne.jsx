@@ -7,6 +7,7 @@ import { ScrollView } from 'react-native';
 import { View } from 'react-native-web';
 
 export default function PageOne() {
+    
 
     const navIcons = [
         { icon: 'ambulance', name: 'Emergency', background:'#1E325C', color:'white', boxShadow:false },

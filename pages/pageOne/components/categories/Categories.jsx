@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import CategorieIcon from '../../../../common/CardIcon/CardIcon';
+import CategorieService from '../../../../services/CategorieService';
 
 export default function Categories() {
 
-    const categories = [
-        { icon: 'ambulance', name: 'Emergency', background:'white', color:'#1E325C', boxShadow:true },
-        { icon: 'tooth', name: 'Dentist', background:'white', color:'#1E325C', boxShadow:true },
-        { icon: 'heartbeat', name: 'Cardiologist', background:'white', color:'#1E325C', boxShadow:true },
-        { icon: 'hospital', name: 'Hospital', background:'white', color:'#1E325C', boxShadow:true },
-        { icon: 'flask', name: 'Laboratory', background:'white', color:'#1E325C', boxShadow:true },
-        { icon: 'user-md', name: 'Consulation', background:'white', color:'#1E325C', boxShadow:true },
-    ]
+        const [categories, setCategories] = useState([]);
+    
+        const getAllCategories = async () => {
+            const categoriesList = await CategorieService.findAll();
+            setCategories(categoriesList);
+        }
+    
+        useEffect(() => getAllCategories(), [])
+
+    // const categories = [
+    //     { icon: 'ambulance', name: 'Emergency', background: 'white', color: '#1E325C', boxShadow: true },
+    //     { icon: 'tooth', name: 'Dentist', background: 'white', color: '#1E325C', boxShadow: true },
+    //     { icon: 'heartbeat', name: 'Cardiologist', background: 'white', color: '#1E325C', boxShadow: true },
+    //     { icon: 'hospital', name: 'Hospital', background: 'white', color: '#1E325C', boxShadow: true },
+    //     { icon: 'flask', name: 'Laboratory', background: 'white', color: '#1E325C', boxShadow: true },
+    //     { icon: 'user-md', name: 'Consulation', background: 'white', color: '#1E325C', boxShadow: true },
+    // ]
 
     return (
 

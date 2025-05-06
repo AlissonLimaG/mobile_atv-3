@@ -1,0 +1,79 @@
+{
+    "user":[
+        {
+            "id":1,
+            "name":"Alisson Lima",
+            "image":"https://dcdn-us.mitiendanube.com/stores/001/147/751/products/rosto-completo31-6398727b1357bf9af915870728409463-1024-1024.png"
+        }
+    ],
+    "doctors":[
+        {
+            "name": "dr. Olivia Wilson",
+            "specialty": "Consultant - Physiotherapy",
+            "stars": 4.9,
+            "image": "https://img.freepik.com/fotos-gratis/bela-jovem-doutora-olhando-a-camera-no-escritorio_1301-7807.jpg?t=st=1744940053~exp=1744943653~hmac=66508a602d1f8ff13a5f2af8f2757473816e10173dc314378324e126d42c0ebf&w=740"
+          },
+          {
+            "name": "dr. Jonathan Patterson",
+            "specialty": "Consultant - Internal Medicine",
+            "stars": 4.8,
+            "image": "https://empreendedor.com.br/wp-content/uploads/2021/01/rsw_350h_263i_truecg_trueft_cover.jpg"
+          },
+          {
+            "name": "dr. Sophia Mendes",
+            "specialty": "Consultant - Pediatrics",
+            "stars": 4.7,
+            "image": "https://img.freepik.com/fotos-gratis/medica-feminina-positiva-em-um-escritorio-com-estetoscopio_23-2148881607.jpg"
+          },
+          {
+            "name": "dr. Marcos Ribeiro",
+            "specialty": "Consultant - Cardiology",
+            "stars": 4.9,
+            "image": "https://img.freepik.com/fotos-premium/retrato-de-um-medico-brasileiro-feliz-sorrindo-no-hospital_259150-57921.jpg"
+          }
+    ],
+    "categories":[
+        {
+            "icon": "ambulance",
+            "name": "Emergency",
+            "background": "white",
+            "color": "#1E325C",
+            "boxShadow": true
+          },
+          {
+            "icon": "tooth",
+            "name": "Dentist",
+            "background": "white",
+            "color": "#1E325C",
+            "boxShadow": true
+          },
+          {
+            "icon": "heartbeat",
+            "name": "Cardiologist",
+            "background": "white",
+            "color": "#1E325C",
+            "boxShadow": true
+          },
+          {
+            "icon": "hospital",
+            "name": "Hospital",
+            "background": "white",
+            "color": "#1E325C",
+            "boxShadow": true
+          },
+          {
+            "icon": "flask",
+            "name": "Laboratory",
+            "background": "white",
+            "color": "#1E325C",
+            "boxShadow": true
+          },
+          {
+            "icon": "user-md",
+            "name": "Consulation",
+            "background": "white",
+            "color": "#1E325C",
+            "boxShadow": true
+          }
+    ]
+}
