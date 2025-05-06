@@ -62,4 +62,5 @@ export default messages = [
         quantMessages: 0,
         time: '3h atrás'
     }
+    
 ];

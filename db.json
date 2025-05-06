@@ -1,79 +1,149 @@
 {
-    "user":[
+    "user": [
         {
-            "id":1,
-            "name":"Alisson Lima",
-            "image":"https://dcdn-us.mitiendanube.com/stores/001/147/751/products/rosto-completo31-6398727b1357bf9af915870728409463-1024-1024.png"
+            "id": 1,
+            "name": "Alisson Lima",
+            "image": "https://dcdn-us.mitiendanube.com/stores/001/147/751/products/rosto-completo31-6398727b1357bf9af915870728409463-1024-1024.png"
+        },
+        {
+            "id": 2,
+            "name": "Luana Marques",
+            "image": "https://dcdn-us.mitiendanube.com/stores/001/147/751/products/rosto-completo31-6398727b1357bf9af915870728409463-1024-1024.png"
         }
     ],
-    "doctors":[
+    "mesages": [
+        {
+            "image": "https://img.freepik.com/fotos-gratis/homem-retrato-rindo_23-2148859448.jpg?w=740",
+            "name": "André Leitão",
+            "message": "Olá, tudo bem?",
+            "quantMessages": 1,
+            "time": "3h atrás"
+        },
+        {
+            "image": "https://img.freepik.com/fotos-premium/retrato-de-uma-jovem-sorridente-com-um-fundo-urbano_23-2149301486.jpg?w=740",
+            "name": "Carla Mendes",
+            "message": "Te mandei os arquivos!",
+            "quantMessages": 3,
+            "time": "2h atrás"
+        },
+        {
+            "image": "https://img.freepik.com/fotos-gratis/retrato-de-um-homem-jovem-com-oculos-de-sol-em-um-dia-ensolarado_23-2149407984.jpg?w=740",
+            "name": "João Pedro",
+            "message": "Bora marcar a call?",
+            "quantMessages": 2,
+            "time": "1h atrás"
+        },
+        {
+            "image": "https://img.freepik.com/fotos-gratis/homem-barbudo-com-roupa-casual-e-oculos-sorrindo-para-a-camera_23-2149436187.jpg?w=740",
+            "name": "Marcos Lima",
+            "message": "Precisa de ajuda com o código?",
+            "quantMessages": 5,
+            "time": "5h atrás"
+        },
+        {
+            "image": "https://img.freepik.com/fotos-premium/homem-com-barba-sorrindo-com-fundo-branco_23-2149336249.jpg?w=740",
+            "name": "Ricardo Pires",
+            "message": "Conseguiu acessar o link?",
+            "quantMessages": 2,
+            "time": "45min atrás"
+        },
+        {
+            "image": "https://img.freepik.com/fotos-gratis/homem-usando-notebook-na-cafeteria_23-2149208457.jpg?w=740",
+            "name": "Carlos Nogueira",
+            "message": "O deploy foi finalizado!",
+            "quantMessages": 1,
+            "time": "agora mesmo"
+        },
+        {
+            "image": "https://img.freepik.com/fotos-gratis/retrato-de-uma-mulher-sorrindo-em-um-dia-ensolarado_23-2149390552.jpg?w=740",
+            "name": "Fernanda Souza",
+            "message": "Amei aquele projeto que você mandou 😍",
+            "quantMessages": 0,
+            "time": "1d atrás"
+        },
+        {
+            "image": "https://img.freepik.com/fotos-gratis/retrato-de-uma-mulher-com-roupa-esportiva-sorrindo_23-2149506998.jpg?w=740",
+            "name": "Tatiane Lopes",
+            "message": "Adorei nossa conversa de ontem 💬",
+            "quantMessages": 0,
+            "time": "2d atrás"
+        },
+        {
+            "image": "https://img.freepik.com/fotos-gratis/homem-com-camisa-azul-e-sorriso-amigavel_23-2149404561.jpg?w=740",
+            "name": "Leonardo Costa",
+            "message": "Já estou no escritório.",
+            "quantMessages": 0,
+            "time": "3h atrás"
+        }
+    ],
+    "doctors": [
         {
             "name": "dr. Olivia Wilson",
             "specialty": "Consultant - Physiotherapy",
             "stars": 4.9,
             "image": "https://img.freepik.com/fotos-gratis/bela-jovem-doutora-olhando-a-camera-no-escritorio_1301-7807.jpg?t=st=1744940053~exp=1744943653~hmac=66508a602d1f8ff13a5f2af8f2757473816e10173dc314378324e126d42c0ebf&w=740"
-          },
-          {
+        },
+        {
             "name": "dr. Jonathan Patterson",
             "specialty": "Consultant - Internal Medicine",
             "stars": 4.8,
             "image": "https://empreendedor.com.br/wp-content/uploads/2021/01/rsw_350h_263i_truecg_trueft_cover.jpg"
-          },
-          {
+        },
+        {
             "name": "dr. Sophia Mendes",
             "specialty": "Consultant - Pediatrics",
             "stars": 4.7,
             "image": "https://img.freepik.com/fotos-gratis/medica-feminina-positiva-em-um-escritorio-com-estetoscopio_23-2148881607.jpg"
-          },
-          {
+        },
+        {
             "name": "dr. Marcos Ribeiro",
             "specialty": "Consultant - Cardiology",
             "stars": 4.9,
             "image": "https://img.freepik.com/fotos-premium/retrato-de-um-medico-brasileiro-feliz-sorrindo-no-hospital_259150-57921.jpg"
-          }
+        }
     ],
-    "categories":[
+    "categories": [
         {
             "icon": "ambulance",
             "name": "Emergency",
             "background": "white",
             "color": "#1E325C",
             "boxShadow": true
-          },
-          {
+        },
+        {
             "icon": "tooth",
             "name": "Dentist",
             "background": "white",
             "color": "#1E325C",
             "boxShadow": true
-          },
-          {
+        },
+        {
             "icon": "heartbeat",
             "name": "Cardiologist",
             "background": "white",
             "color": "#1E325C",
             "boxShadow": true
-          },
-          {
+        },
+        {
             "icon": "hospital",
             "name": "Hospital",
             "background": "white",
             "color": "#1E325C",
             "boxShadow": true
-          },
-          {
+        },
+        {
             "icon": "flask",
             "name": "Laboratory",
             "background": "white",
             "color": "#1E325C",
             "boxShadow": true
-          },
-          {
+        },
+        {
             "icon": "user-md",
             "name": "Consulation",
             "background": "white",
             "color": "#1E325C",
             "boxShadow": true
-          }
+        }
     ]
 }

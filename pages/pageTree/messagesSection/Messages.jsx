@@ -1,9 +1,20 @@
 import { Text, View, StyleSheet } from 'react-native';
 import Message from './message/Message';
 import messagesData from './messageData';
+import { useEffect, useState } from 'react';
+import MesageService from '../../../services/MesageService';
 
 
 export default Messages = () => {
+
+    const [mesages, setMesages] = useState([]);
+
+    const getAllMesages = async () => {
+        const response = await MesageService.findAll();
+        setMesages(response);
+    }
+
+    useEffect(() => getAllMesages(), [])
 
     return (
 
@@ -15,8 +26,8 @@ export default Messages = () => {
             </View>
 
             <View style={styles.messagesContainer}>
-                {messagesData.map((message, index) => (
-                    <Message key={index} data={message}/>
+                {mesages.map((message, index) => (
+                    <Message key={index} data={message} />
                 ))}
             </View>
 
@@ -35,14 +46,14 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 8
     },
     titleContainer: {
-        paddingTop:8,
+        paddingTop: 8,
         flexDirection: 'row',
         justifyContent: 'space-between'
     },
-    messagesContainer:{
-        paddingTop:16,
-        paddingBottom:8,
-        rowGap:8
+    messagesContainer: {
+        paddingTop: 16,
+        paddingBottom: 8,
+        rowGap: 8
     }
 
 });

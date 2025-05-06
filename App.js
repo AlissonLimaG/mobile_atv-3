@@ -11,9 +11,9 @@ function AppContent() {
   return (
     <View style={[{ paddingTop: insets.top, backgroundColor:'#1E325C', maxHeight:'100%' }]}>
 
-      {/* <PageTree/> */}
+      <PageTree/>
       {/* <PageTwo/> */}
-      <PageOne/>
+      {/* <PageOne/> */}
 
     </View>
   );
